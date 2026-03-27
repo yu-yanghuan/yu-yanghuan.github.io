@@ -78,7 +78,7 @@ user_groups:
 - Visitors
 ---
 
-I am PhD candidate of Molecular and Cellular Biology. My research area includs synthetic biology, microfluidics, extremophiles, and mathematical modeling, with a strong passion for applying these tools to fundamental biological questions. I'm currently working in the team of [Riedel-Kruse Lab, University of Ariona.](https://riedel-kruse.arizona.edu)
+I am PhD candidate of Molecular and Cellular Biology. My research area includs synthetic biology, microfluidics, extremophiles, and mathematical modeling, with a strong passion for applying these tools to fundamental biological questions. I'm currently working in the team of [Riedel-Kruse Lab, University of Arizona.](https://riedel-kruse.arizona.edu)
 
 My research interests includs:  
 Build-to-understand studies in multicellular systems and evolution  
