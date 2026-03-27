@@ -3,17 +3,23 @@
   #profile img.img-fluid {
     border-radius: 50%;
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
+    display: block;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 
-  /* Adjust the social links box to match the scaled avatar */
+  /* Adjust the social links box to gracefully fit all icons entirely and align with avatar */
   .col-lg-5 .network-icon, .col-lg-4 .network-icon, .col-lg-3 .network-icon {
-    max-width: 100px;       /* Match the avatar's new width */
-    margin: 1.5rem auto 0 !important; /* Center the box and override mx-2 */
-    border-radius: 20px;    /* Give it smooth rounded corners instead of harsh edges */
+    width: max-content;     /* Expand horizontally to fit all icons exactly in one line! */
+    max-width: 100%;        /* Prevents screen overflow on mobile */
+    min-width: 180px;       /* Ensure it's at least somewhat wide for balance */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 1.5rem auto 0 !important; /* Perfectly center it under the avatar */
+    border-radius: 30px;    /* Smooth pill shape */
     box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Very subtle shadow */
+    white-space: nowrap;    /* Forcibly prevent icons from wrapping onto a second line */
   }
 </style>
