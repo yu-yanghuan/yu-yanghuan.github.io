@@ -44,6 +44,13 @@
   {{ if and $show_authors $item.Params.authors }}
   <div class="article-metadata" itemprop="author">
     {{ partial "page_metadata_authors" $item }}
+    {{ if $item.Params.publication_short }}
+    <span class="middot-divider"></span>
+    <span itemprop="publisher"><em>{{ $item.Params.publication_short | markdownify }}</em></span>
+    {{ else if $item.Params.publication }}
+    <span class="middot-divider"></span>
+    <span itemprop="publisher"><em>{{ $item.Params.publication | markdownify }}</em></span>
+    {{ end }}
   </div>
   {{ end }}
 

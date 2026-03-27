@@ -1,4 +1,19 @@
-{{/* Do not directly modify this file! */}}
-{{/* Instead, create a `layout/partials/custom_head.html` file in your site and add your code to it. */}}
+<style>
+  /* Make the About widget avatar box round and perfectly sized */
+  #profile img.img-fluid {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
 
-{{/* This partial is included in `themes/academia/layout/partials/site_head.html`. */}}
+  /* Adjust the social links box to match the scaled avatar */
+  .col-lg-5 .network-icon {
+    max-width: 80px;       /* Match the avatar's new width */
+    margin: 1.5rem auto 0 !important; /* Center the box and override mx-2 */
+    border-radius: 20px;    /* Give it smooth rounded corners instead of harsh edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Very subtle shadow */
+  }
+</style>
